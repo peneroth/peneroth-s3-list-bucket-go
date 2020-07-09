@@ -1,4 +1,3 @@
-
 /*
    This is a test program based on an example file from Amazon
    The program lists files in a S3 bucket
@@ -10,6 +9,7 @@ import (
 	"fmt"
 	"os"
 	"time"
+
 	// Peter: Documentation for AWX Go API: https://docs.aws.amazon.com/sdk-for-go/api/
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
@@ -17,7 +17,7 @@ import (
 )
 
 func main() {
-	// Initialize a session in us-west-2 that the SDK will use to load
+	// Initialize a session in eu-north-1 that the SDK will use to load
 	// credentials from the shared credentials file ~/.aws/credentials.
 	//
 	// Peter: Info about the credentials file at:
